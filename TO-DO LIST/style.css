@@ -1,0 +1,127 @@
+/* Center body and background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20231006/pngtree-innovative-meeting-concept-utilizing-sticky-notes-for-an-efficient-to-do-image_13576576.png') no-repeat center center fixed;
+    background-size: cover;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* Main To-Do Container */
+  .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 400px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Button */
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Task List */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background: #eee;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  li.canceled {
+    text-decoration: line-through;
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Action Icons (Cancel and Delete) */
+  .actions i {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .actions i:hover {
+    color: #f44336; /* Red on hover */
+  }
+  
+  /* Dark mode styles */
+  body.dark {
+    background: #1e1e2f;
+    color: #fff;
+  }
+  
+  body.dark .container {
+    background-color: rgba(30, 30, 30, 0.95);
+    color: #fff;
+  }
+  
+  body.dark li {
+    background: #333;
+    color: #ddd;
+  }
+  
+  body.dark li.completed {
+    background: #3c543c;
+    color: #bbf7d0;
+  }
+  
+  body.dark li.canceled {
+    background: #543c3c;
+    color: #fca5a5;
+  }
+  
